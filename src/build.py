@@ -13,7 +13,7 @@ SITE = ROOT / "site"
 D = json.load(open(ROOT / "src" / "data.json"))
 
 SITE_URL = "https://jstories.uk"
-CLOSED_MSG = "Jachnun Stories is closed. This site is kept online as an archive, and ordering is no longer available."
+CLOSED_MSG = "The store is closed. This is a demo website, kept online as an archive."
 TIP = "The shop is closed"
 
 # ---------------------------------------------------------------- helpers
@@ -198,7 +198,7 @@ def build_home():
 <p class="tag">A small project, 2020 to 2021</p>
 <h1>Jachnun Stories</h1>
 <p class="sans" style="margin-top:-4px"><strong>Original Jachnun homemade by order</strong></p>
-<div class="notice"><p><strong>Jachnun Stories is no longer taking orders.</strong> The shop below is preserved as it was, as a keepsake of a very tasty chapter. Buttons are shown for memory only and do not work.</p></div>
+<div class="notice"><p><strong>The store is closed; this is a demo website.</strong> The shop below is preserved as it was, as a keepsake of a very tasty chapter. Buttons are shown for memory only and do not work.</p></div>
 
 <div class="narrow">
 <h2>The story of rolling</h2>
@@ -224,8 +224,6 @@ def build_home():
 <div><img src="/img/i-recycable.png" alt="Recyclable packaging"><span>Recyclable</span></div>
 <div><img src="/img/i-quality.png" alt="Quality"><span>Quality</span></div>
 </div>
-<p class="sans" style="text-align:center;margin-bottom:0">Remind me before the weekend!</p>
-<div class="sub"><input type="email" placeholder="Email" disabled title="{TIP}">{disabled_btn("Subscribe")}</div>
 """
     write("index.html", page("/", "Jachnun Stories", body,
           "Jachnun Stories: homemade Yemenite Jachnun, rolled and baked overnight. A small project, now closed and kept online as an archive.", nav="/"))
@@ -309,7 +307,7 @@ def build_blog():
 def build_delivery():
     soup = BeautifulSoup(D["pages"]["delivery"]["html"], "lxml")
     # remove the contact call-to-action ("צרו קשר להזמנה", WhatsApp, e-mail)
-    for t in soup.find_all(string=re.compile("צרו קשר")):
+    for t in soup.find_all(string=re.compile("צרו קשר|יוצרים קשר")):
         node = t.find_parent("div")
         if node: node.decompose()
     for a in soup.find_all("a"):
