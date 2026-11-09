@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jachnun Stories</title>
+<meta name="description" content="Jachnun Stories: homemade Yemenite Jachnun, rolled and baked overnight. A small project from 2020 to 2021, now closed.">
+<meta name="theme-color" content="#f69679">
+<meta property="og:title" content="Jachnun Stories">
+<meta property="og:description" content="Homemade Yemenite Jachnun, rolled and baked overnight. A small project, now closed.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jstories.uk/">
+<meta property="og:image" content="https://jstories.uk/img/hero.jpg">
+<style>
+  :root{
+    --peach:#f69679;
+    --peach-soft:#fde8e1;
+    --ink:#2b2220;
+    --muted:#6e5f5a;
+    --bg:#fffaf7;
+    --card:#ffffff;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --peach-soft:#3a2823;
+      --ink:#f6ece8;
+      --muted:#c2b0a9;
+      --bg:#1d1614;
+      --card:#271d1a;
+    }
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--ink);
+    font-family:Georgia,"Times New Roman",serif;
+    line-height:1.65;
+  }
+  header{
+    background:var(--peach);
+    padding:28px 16px;
+    text-align:center;
+  }
+  header img{max-width:150px;height:auto;display:block;margin:0 auto}
+  header .name{
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-weight:700;
+    letter-spacing:.04em;
+    color:#2b2220;
+    font-size:1.6rem;
+    margin:0;
+  }
+  main{max-width:680px;margin:0 auto;padding:0 16px 48px}
+  .hero{margin:32px 0 8px}
+  .hero img{width:100%;height:auto;border-radius:12px;display:block}
+  .tag{
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    text-transform:uppercase;
+    letter-spacing:.12em;
+    font-size:.78rem;
+    color:var(--muted);
+    margin:28px 0 6px;
+  }
+  h1{font-size:2rem;line-height:1.2;margin:0 0 12px}
+  h2{font-size:1.25rem;margin:36px 0 8px}
+  .notice{
+    background:var(--peach-soft);
+    border-left:4px solid var(--peach);
+    padding:14px 18px;
+    border-radius:6px;
+    margin:20px 0;
+  }
+  .notice p{margin:0}
+  p{margin:0 0 16px}
+  .gallery{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(150px,1fr));
+    gap:10px;
+    margin:20px 0;
+  }
+  .gallery img{width:100%;height:auto;border-radius:8px;display:block}
+  footer{
+    border-top:1px solid var(--peach-soft);
+    padding:24px 16px 40px;
+    text-align:center;
+    font-family:system-ui,-apple-system,"Segoe UI",sans-serif;
+    font-size:.9rem;
+    color:var(--muted);
+  }
+  footer a{color:inherit}
+  footer .links{margin-bottom:10px}
+  footer .links a{margin:0 10px}
+</style>
+</head>
+<body>
+
+<header>
+  <img src="img/logo.png" alt="Jachnun Stories logo" onerror="this.style.display='none';document.getElementById('fallback-name').style.display='block'">
+  <p class="name" id="fallback-name" style="display:none">Jachnun Stories</p>
+</header>
+
+<main>
+  <div class="hero">
+    <img src="img/hero.jpg" alt="Homemade Jachnun, rolled and baked overnight" onerror="this.parentNode.style.display='none'">
+  </div>
+
+  <p class="tag">A small project, 2020 to 2021</p>
+  <h1>Jachnun Stories</h1>
+
+  <div class="notice">
+    <p><strong>Jachnun Stories is no longer taking orders.</strong> This page stays online as a keepsake of a very tasty chapter.</p>
+  </div>
+
+  <h2>The story of rolling</h2>
+  <p>It started as an underground tradition: Jachnun brunch for friends. Then it became a weekly one, thanks to the feedback of the people who came back for more. The rolling and the baking were mine. The support and demand were what let Jachnun Stories grow.</p>
+  <p>I run a tech startup, and when the pandemic slowed everything down, my calendar suddenly had free weekends. I skipped another Netflix binge, pulled out my Yemenite grandma's original Jachnun recipe and my grandpa's secret pepper schug, and started to roll. After years of friendly, sarcastic "what about my Jachnun?" from my local community, I finally gave it a whole weekend. Then the next one. Then another.</p>
+  <p>Delicious, authentic, handmade with love. Simply enjoy it.</p>
+
+  <h2>What it was</h2>
+  <p>Original Jachnun, Kubaneh bread and a vegan Jachnun, all homemade to order, baked overnight and delivered across London on weekend mornings. Served with a baked egg, grated tomato and a spicy schug made from my grandfather's recipe.</p>
+
+  <div class="gallery" id="gallery">
+    <img src="img/photo-1.jpg" alt="" onerror="this.style.display='none'">
+    <img src="img/photo-2.jpg" alt="" onerror="this.style.display='none'">
+    <img src="img/photo-3.jpg" alt="" onerror="this.style.display='none'">
+  </div>
+
+  <p>Thank you to everyone who ordered, shared, and rolled with me.</p>
+</main>
+
+<footer>
+  <div class="links">
+    <a href="https://www.facebook.com/JachnunStories/" rel="noopener">Facebook</a>
+    <a href="https://www.instagram.com/jachnunstories/" rel="noopener">Instagram</a>
+  </div>
+  <div>&copy; 2026 Jachnun Stories</div>
+</footer>
+
+</body>
+</html>
