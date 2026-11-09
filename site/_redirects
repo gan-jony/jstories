@@ -1,0 +1,14 @@
+/cart / 302
+/cart/* / 302
+/pages/contact-us / 302
+/apps/help-center / 302
+/apps/* / 302
+/account / 302
+/account/* / 302
+/checkout / 302
+/search / 302
+/policies/* / 302
+/collections / 302
+/products / 302
+/blogs / /blogs/news 302
+/collections/speicals / 302
